@@ -36,3 +36,8 @@ def show_student_marks(student_id, course_id):
         if student[0] == student_id:
             marks = student[3].get(course_id, "N/A")
             print(f"Student {student[1]} scored {marks} in course {course_id}")
+            
+list_courses()
+list_students()
+input_marks("1","1","20")
+show_student_marks("1", "1")
